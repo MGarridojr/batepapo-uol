@@ -46,3 +46,45 @@ footer input {
     outline: none;
     font-weight: 400;
 }
+footer p {
+    position: absolute;
+    left: 18px;
+    bottom: 8px;
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+  }
+.Caixa-de-msg {
+    min-height: 40px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .Caixa-de-msg p {
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 20px;
+    word-break: break-word;
+  }
+  
+  .login-logout {
+    background-color: #dcdcdc;
+  }
+  
+  .private {
+    background-color: #ffdede;
+  }
+
+  time {
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+  }
+  
+  span {
+    font-weight: 700;
+  }
+  
