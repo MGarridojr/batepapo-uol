@@ -54,6 +54,11 @@ footer p {
     color: gray;
     font-weight: 300;
   }
+main{
+    margin-top: 84px;
+  margin-bottom: 85px;
+}
+  
 .Caixa-de-msg {
     min-height: 40px;
     margin-bottom: 5px;
@@ -87,4 +92,92 @@ footer p {
   span {
     font-weight: 700;
   }
+  aside {
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
   
+  aside.info {
+    overflow-y: scroll;
+  }
+  .hide {
+    display: none;
+  }
+  .fundo-escuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(100vw - 250px);
+    height: 100%;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  aside.info {
+    overflow-y: scroll;
+  }
+  
+  aside ion-icon {
+    font-size: 20px;
+  }
+  
+  
+  h3.enunciados-barra-lateral {
+    width: 190px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  div.lista-de-contatos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div.marcador {
+    margin-left: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  h4 {
+    font-size: 16px;
+    display: inline;
+    margin-left: 6px;
+    word-break: break-all;
+  }
+  
+  .contato.selected .check {
+    color: #28bb25;
+  }
+  
+  .contato .check {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .visibilidade.selected .check {
+    color: #28bb25;
+  }
+  
+  .visibilidade .check {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+  }

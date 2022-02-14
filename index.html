@@ -15,7 +15,7 @@
   <header>
       <nav class="topo">
           <img src="imagens/logo 1.svg" alt="logo Uol">
-          <ion-icon name="people" class="iconTdsContatos"></ion-icon>
+          <ion-icon onclick="mostrarBarraLateral()" name="people" class="iconTdsContatos"></ion-icon>
 
       </nav>
 
@@ -26,10 +26,51 @@
 
   </main>
   <footer>
-    <input class="messageInput" type="text" placeholder="Escreva aqui..." id="inputText">
+    <input class="messageInput" type="text" placeholder="Escreva aqui..." name="input">
     <ion-icon name="paper-plane-outline" onclick="MandarMsg()" data-identifier="send-message" id="inputSend"></ion-icon>
     <p>Enviando para Todos (publicamente)</p>
   </footer>
+
+  <div class="barra-lateral hide">
+    <div class="fundo-escuro" onclick="esconderBarraLateral()"></div>
+    <aside class="info">
+      <h3 class="enunciados-barra-lateral">Escolha um contato para enviar mensagem:</h3>
+      <div
+        class="marcador contato select"
+        data-identifier="contatos"
+        onclick="selectContato(this)"
+      >
+        <ion-icon class="people-icon" name="people"></ion-icon>
+        <h4>Todos</h4>
+        <ion-icon class="check selected" name="checkmark-sharp"></ion-icon>
+      </div>
+      <div class="lista-de-contatos"></div>
+
+      <h3 class="enunciados-barra-lateral">Escolha a visibilidade:</h3>
+      <div
+        class="marcador visibilidade select"
+        data-identifier="visibilidade"
+        onclick="selectvisibilidade(this)"
+      >
+        <ion-icon name="lock-open"></ion-icon>
+        <h4>Público</h4>
+        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+      </div>
+      <div
+        class="marcador visibilidade"
+        data-identifier="visibilidade"
+        onclick="selectvisibilidade(this)"
+      >
+        <ion-icon name="lock-closed"></ion-icon>
+        <h4>Reservadamente</h4>
+        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+      </div>
+    </aside>
+  </div>
+
+
+
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
